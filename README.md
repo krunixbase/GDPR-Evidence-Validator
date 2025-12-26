@@ -30,22 +30,3 @@ The validator evaluates evidence related to:
 
 ---
 
-## Repository Structure
-
-gdpr-evidence-validator/
-├── validate.py
-├── report_template.html
-├── report.html
-├── controls.json
-├── examples/
-│   └── evidence/
-│       ├── processing_register.csv
-│       ├── privacy_policy.pdf
-│       ├── dpia/
-│       │   └── dpia_customer_data.pdf
-│       ├── data_subject_requests/
-│       │   └── dsr_log.csv
-│       └── breach_log.csv
-└── README.md
-
----
