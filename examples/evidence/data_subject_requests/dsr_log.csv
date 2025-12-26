@@ -1,1 +1,5 @@
+request_id,type,status,response_days
+DSR-001,Access,Completed,21
+DSR-002,Erasure,Completed,18
+DSR-003,Rectification,Completed,25
 
