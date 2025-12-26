@@ -1,3 +1,5 @@
+This repository demonstrates how audit‑ready compliance evidence can be validated and presented.
+
 # GDPR Evidence Validator
 
 GDPR Evidence Validator is an offline compliance validation tool designed to assess the availability and completeness of key GDPR evidence artifacts.  
