@@ -1,1 +1,5 @@
+process_name,data_category,purpose,legal_basis
+User Accounts,Personal Data,Account management,Contract
+Marketing,Email addresses,Newsletter distribution,Consent
+Customer Support,Contact data,Support communication,Legitimate Interest
 
