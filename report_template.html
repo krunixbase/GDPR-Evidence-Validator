@@ -1,1 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GDPR Evidence Validation Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #1a1a1a;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .finding {
+            color: #b30000;
+            font-weight: bold;
+        }
+        .ok {
+            color: #006600;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 60px;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
 
+<h1>GDPR Evidence Validation Report</h1>
+
+<p><strong>Engagement Type:</strong> GDPR Readiness Assessment</p>
+<p><strong>Assessment Date:</strong> {{ assessment_date }}</p>
+
+<div class="section">
+    <h2>Scope</h2>
+    <p>
+        This assessment evaluates the availability and completeness of GDPR
+        evidence artifacts provided by the organization. The review focuses
+        on governance and documentation readiness and does not include
+        technical system testing.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Evidence Overview</h2>
+    <table>
+        <tr>
+            <th>GDPR Article</th>
+            <th>Evidence</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Article 30</td>
+            <td>Processing Register</td>
+            <td class="{{ processing_register_status }}">{{ processing_register_status }}</td>
+        </tr>
+        <tr>
+            <td>Articles 12–14</td>
+            <td>
+                Privacy Policy<br>
+                <a href="examples/evidence/privacy_policy.pdf" target="_blank">
+                    Open Privacy Policy (PDF)
+                </a>
+            </td>
+            <td class="{{ privacy_policy_status }}">{{ privacy_policy_status }}</td>
+        </tr>
+        <tr>
+            <td>Article 35</td>
+            <td>
+                DPIA Documentation<br>
+                <a href="examples/evidence/dpia/" target="_blank">
+                    View DPIA Evidence
+                </a>
+            </td>
+            <td class="{{ dpia_status }}">{{ dpia_status }}</td>
+        </tr>
+        <tr>
+            <td>Articles 15–22</td>
+            <td>
+                Data Subject Requests Log<br>
+                <a href="examples/evidence/data_subject_requests/dsr_log.csv" target="_blank">
+                    Open DSR Log
+                </a>
+            </td>
+            <td class="{{ dsr_status }}">{{ dsr_status }}</td>
+        </tr>
+        <tr>
+            <td>Articles 33–34</td>
+            <td>
+                Breach Log<br>
+                <a href="examples/evidence/breach_log.csv" target="_blank">
+                    Open Breach Log
+                </a>
+            </td>
+            <td class="{{ breach_status }}">{{ breach_status }}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="section">
+    <h2>Findings Summary</h2>
+    <p>Total Findings: <strong>{{ total_findings }}</strong></p>
+    <p>Critical Findings: <strong>{{ critical_findings }}</strong></p>
+</div>
+
+<div class="section">
+    <h2>Observations</h2>
+    <ul>
+        {{ observations }}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Recommendations</h2>
+    <ul>
+        {{ recommendations }}
+    </ul>
+</div>
+
+<div class="section">
+    <h2>Conclusion</h2>
+    <p>
+        Based on the evidence reviewed, the organization demonstrates
+        {{ compliance_level }} GDPR documentation readiness.
+        Identified gaps should be addressed to improve overall compliance posture.
+    </p>
+</div>
+
+<div class="footer">
+    <p>
+        This report was generated automatically by the GDPR Evidence Validator.
+        It is intended for internal and consulting use only.
+    </p>
+</div>
+
+</body>
+</html>
