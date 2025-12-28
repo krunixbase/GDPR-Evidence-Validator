@@ -32,3 +32,12 @@ The validator evaluates evidence related to:
 
 ---
 
+## Contact & Professional Profiles
+
+📧 Email: shamircrackerlab@gmail.com  
+🔗 GitHub: [Gitkrunixdev](https://github.com/Gitkrunixdev)  
+🔗 GitHub: [krunixbase](https://github.com/krunixbase)  
+🔗 Twitter (X): [@shamircracker](https://x.com/shamircracker)  
+🔗 LinkedIn: [shamircrackerlab](https://www.linkedin.com/in/shamircrackerlab)
+
+---
